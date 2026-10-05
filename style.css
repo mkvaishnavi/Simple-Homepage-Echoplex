@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    border: 0;
+    margin: 0;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+h1 span{
+    color: blue;
+}
+.top button{
+    background-color: white;
+    color: blue;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+.btn2{
+    background-color: white;
+    color: blue;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border-color: gray;
+}
+.btn1{
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border-color: gray;
+}
+.main-course-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four-things{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eight-things{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.one span{
+    background-color: #C9D2FA;
+    padding: 10px;
+    border-radius: 10px;
+    color: #C9D2FA;
+}
+.two span{
+    background-color: #E2FBE8;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E2FBE8;
+}
+.three span{
+    background-color: #FBE5E6;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FBE5E6;
+}
+.four span{
+    background-color: #FDF9C9;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FDF9C9;
+}
+.five span{
+    background-color: #FCEED8;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FCEED8;
+}
+.six span{
+    background-color: #DEE9FC;
+    padding: 10px;
+    border-radius: 10px;
+    color: #DEE9FC;
+}
+.seven span{
+    background-color: #F1E8FD;
+    padding: 10px;
+    border-radius: 10px;
+    color: #F1E8FD;
+}
+.eight span{
+    background-color: #D5FAF1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #D5FAF1;
+}
+.one-para span{
+    color: #4138C2;
+}
+.two-para span{
+    color: #5EC269;
+}
+.three-para span{
+    color: #E14F62;
+}
+.four-para span{
+    color: #E2B53E;
+}
+.five-para span{
+    color: #E87B35;
+}
+.six-para span{
+    color: #4E80EE;
+}
+.seven-para span{
+    color: #9D59EF;
+}
+.eight-para span{
+    color: #52B3D0;
+}
+.down{
+    position: relative;
+}
+.down img{
+    width: 111.111%;
+    margin-left: -5.555%;
+    display: block;
+}
+.down-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.down-content button{
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border-color: gray;
+}
+.footer{
+    display: flex;
+    align-items: left;
+    gap: 30px;
+    background-color: #121826;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: 40px;
+    color: white;
+}
+/* =========================
+   TABLET — 1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+    main {
+        width: 90%;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+
+    .heading {
+        width: 50%;
+    }
+
+    .hero img {
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .four-things {
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE — 412px
+========================= */
+
+@media (max-width: 412px) {
+
+    main {
+        width: 90%;
+    }
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    /* FEATURES */
+
+    .main-course-heading h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .four-things {
+        flex-wrap: wrap;
+    }
+
+    .four-things > div {
+        width: 50%;
+        text-align: center;
+    }
+
+
+    /* CTA */
+
+    .down-content {
+        width: 90%;
+    }
+
+    .down-content h1 {
+        font-size: 24px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+}
